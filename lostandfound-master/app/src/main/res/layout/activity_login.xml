@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/bkg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp">
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text4"
+            android:layout_marginTop="150dp"
+            android:text="EMAIL"
+            android:textSize="15dp"
+            android:textColor="@color/teal_200"
+            />
+
+        <EditText
+            android:id="@+id/loginemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text4"
+            android:background="@drawable/border"
+            android:hint="Enter Email Address"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text5"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/loginemail"
+            android:text="PASSWORD"
+            android:textSize="15dp"
+            android:textColor="@color/teal_200"
+            />
+
+        <EditText
+            android:id="@+id/loginpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/text5"
+            android:background="@drawable/border"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/loginpass"
+            android:layout_marginTop="30dp"
+            android:text="LOGIN"
+            android:id="@+id/loginbtn"
+            />
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:elevation="10dp"
+            android:id="@+id/progressbarinloginactivity"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/forgotpass"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="500dp"
+            android:text="forgot password"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="155dp"
+            android:layout_height="119dp"
+            android:layout_marginLeft="100dp"
+            app:srcCompat="@drawable/lostandfoundlogo" />
+
+
+    </RelativeLayout>
+
+
+
+
+</ScrollView>

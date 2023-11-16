@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="50dp"
+        android:padding="25dp" >
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1mm"
+            android:maxWidth="180dp"
+            android:src="@drawable/lostandfoundlogo"
+            android:clipToOutline="true"
+
+            android:adjustViewBounds="true"
+            android:layout_centerHorizontal="true"
+            />
+
+
+
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/signin"
+            android:text="sign in"
+            android:textColor="@color/black"
+            android:layout_marginTop="100dp"
+            android:layout_below="@id/logo"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signin"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginRight="50dp"
+            android:text="sign up"
+            android:textColor="@color/black" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

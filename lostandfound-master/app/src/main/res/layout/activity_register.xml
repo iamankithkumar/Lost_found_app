@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bkg"
+    tools:context=".register">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="15dp"
+        >
+
+        <TextView
+            android:id="@+id/nametxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="05dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="05dp"
+            android:layout_marginBottom="05dp"
+            android:text="NAME "
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/namereg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nametxt"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:autofillHints=""
+            android:background="@drawable/border"
+            android:hint="Enter your name"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/rollno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/namereg"
+            android:layout_marginStart="05dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginEnd="05dp"
+            android:layout_marginBottom="05dp"
+            android:text="ROLL NO. "
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/rollnoreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rollno"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/border"
+            android:hint="Enter your Roll No."
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/emailtxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rollnoreg"
+            android:layout_marginStart="05dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginEnd="05dp"
+            android:layout_marginBottom="05dp"
+            android:text="EMAIL ID"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailtxt"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/border"
+            android:hint="Use IITP email address."
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/passtxt"
+            android:layout_below="@id/emailreg"
+            android:text="PASSWORD"
+            android:textStyle="bold"
+            android:textColor="@color/teal_200"
+            android:layout_margin="05dp"/>
+
+        <EditText
+            android:id="@+id/passreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passtxt"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/border"
+            android:hint="Enter Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirm_password"
+            android:layout_below="@id/passreg"
+            android:text="CONFIRM PASSWORD"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold"
+            android:layout_margin="05dp"/>
+
+        <EditText
+            android:id="@+id/confpassreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_password"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/border"
+
+            android:hint="Re-enter Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/phnotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confpassreg"
+            android:layout_marginStart="05dp"
+            android:layout_marginTop="05dp"
+            android:layout_marginEnd="05dp"
+            android:layout_marginBottom="05dp"
+            android:text="PHONE NUMBER"
+            android:textColor="@color/teal_200"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phnoreg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phnotxt"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/border"
+            android:hint="Enter Phone Number without +91/0"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp"
+            android:padding="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+        <Button
+            android:id="@+id/SignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:text="SIGN UP"
+
+            android:layout_below="@id/phnoreg"
+            android:layout_marginTop="50dp"
+
+
+            />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/loading"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:elevation="10dp"
+            android:visibility="gone"
+            />
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
